@@ -1,17 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="2" total="4" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T08:16:00Z" name="Suite" finished-at="2022-07-27T08:16:11Z" duration-ms="10931">
+  <suite started-at="2022-07-27T08:30:59Z" name="Suite" finished-at="2022-07-27T08:31:19Z" duration-ms="20235">
     <groups>
     </groups>
-    <test started-at="2022-07-27T08:16:00Z" name="QA" finished-at="2022-07-27T08:16:11Z" duration-ms="10931">
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:15:59Z" name="createReport" finished-at="2022-07-27T08:16:00Z" duration-ms="494" status="PASS">
+    <test started-at="2022-07-27T08:30:59Z" name="QA" finished-at="2022-07-27T08:31:19Z" duration-ms="20235">
+      <class name="script.InvalidLogin">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:script.InvalidLogin@3d680b5a]" started-at="2022-07-27T08:30:58Z" name="createReport" finished-at="2022-07-27T08:30:59Z" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="openApp(java.lang.reflect.Method, java.lang.String)[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:16:00Z" name="openApp" finished-at="2022-07-27T08:16:11Z" duration-ms="10877" status="FAIL">
+        <test-method is-config="true" signature="openApp(java.lang.reflect.Method, java.lang.String)[pri:0, instance:script.InvalidLogin@3d680b5a]" started-at="2022-07-27T08:31:11Z" name="openApp" finished-at="2022-07-27T08:31:19Z" duration-ms="7861" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void script.InvalidLogin.testInvalidLogin()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[config.properties]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: ""]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: ""
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:678)
+at java.base/java.lang.Integer.parseInt(Integer.java:784)
+at generic.BaseTest.openApp(BaseTest.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@3d680b5a]" started-at="2022-07-27T08:31:19Z" name="testInvalidLogin" finished-at="2022-07-27T08:31:19Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: ""]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: ""
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:678)
+at java.base/java.lang.Integer.parseInt(Integer.java:784)
+at generic.BaseTest.openApp(BaseTest.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@3d680b5a]" started-at="2022-07-27T08:31:19Z" name="closeApp" finished-at="2022-07-27T08:31:19Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.InvalidLogin@3d680b5a]" started-at="2022-07-27T08:31:19Z" name="publishReport" finished-at="2022-07-27T08:31:20Z" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishReport -->
+      </class> <!-- script.InvalidLogin -->
+      <class name="script.ValidLogin">
+        <test-method is-config="true" signature="openApp(java.lang.reflect.Method, java.lang.String)[pri:0, instance:script.ValidLogin@4b5d6a01]" started-at="2022-07-27T08:30:59Z" name="openApp" finished-at="2022-07-27T08:31:11Z" duration-ms="12280" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -61,7 +159,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:16:11Z" name="testValidLogin" finished-at="2022-07-27T08:16:11Z" duration-ms="0" status="SKIP">
+        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@4b5d6a01]" started-at="2022-07-27T08:31:11Z" name="testValidLogin" finished-at="2022-07-27T08:31:11Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: ""]]>
@@ -99,14 +197,10 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:16:11Z" name="closeApp" finished-at="2022-07-27T08:16:11Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@4b5d6a01]" started-at="2022-07-27T08:31:11Z" name="closeApp" finished-at="2022-07-27T08:31:11Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:16:11Z" name="publishReport" finished-at="2022-07-27T08:16:12Z" duration-ms="872" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishReport -->
       </class> <!-- script.ValidLogin -->
     </test> <!-- QA -->
   </suite> <!-- Suite -->

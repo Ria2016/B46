@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">QA</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">10,931</td><td></td><td></td></tr>
+<tr><td><a href="#t0">QA</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">20,235</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">QA &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">script.ValidLogin</td><td><a href="#m0">openApp</a></td><td rowspan="1">1658909760305</td><td rowspan="1">10877</td></tr><tr><th colspan="4">QA &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">script.ValidLogin</td><td><a href="#m1">closeApp</a></td><td rowspan="1">1658909771203</td><td rowspan="1">0</td></tr><tr><th colspan="4">QA &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">script.ValidLogin</td><td><a href="#m2">testValidLogin</a></td><td rowspan="1">1658909771198</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">QA &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">script.InvalidLogin</td><td><a href="#m0">openApp</a></td><td rowspan="1">1658910671584</td><td rowspan="1">7861</td></tr><tr class="failedodd"><td rowspan="1">script.ValidLogin</td><td><a href="#m1">openApp</a></td><td rowspan="1">1658910659273</td><td rowspan="1">12280</td></tr><tr><th colspan="4">QA &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">script.InvalidLogin</td><td><a href="#m2">closeApp</a></td><td rowspan="1">1658910679474</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">script.ValidLogin</td><td><a href="#m3">closeApp</a></td><td rowspan="1">1658910671577</td><td rowspan="1">0</td></tr><tr><th colspan="4">QA &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">script.InvalidLogin</td><td><a href="#m4">testInvalidLogin</a></td><td rowspan="1">1658910679454</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">script.ValidLogin</td><td><a href="#m5">testValidLogin</a></td><td rowspan="1">1658910671568</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>QA</h2><h3 id="m0">script.ValidLogin#openApp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>public void script.ValidLogin.testValidLogin()</td><td>config.properties</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
+<h2>QA</h2><h3 id="m0">script.InvalidLogin#openApp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>public void script.InvalidLogin.testInvalidLogin()</td><td>config.properties</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
 	at java.base/java.lang.Integer.parseInt(Integer.java:678)
 	at java.base/java.lang.Integer.parseInt(Integer.java:784)
@@ -23,8 +23,29 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">script.ValidLogin#closeApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">script.ValidLogin#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
+<h3 id="m1">script.ValidLogin#openApp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>public void script.ValidLogin.testValidLogin()</td><td>config.properties</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+	at generic.BaseTest.openApp(BaseTest.java:102)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">script.InvalidLogin#closeApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">script.ValidLogin#closeApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">script.InvalidLogin#testInvalidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+	at generic.BaseTest.openApp(BaseTest.java:102)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">script.ValidLogin#testValidLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
 	at java.base/java.lang.Integer.parseInt(Integer.java:678)
 	at java.base/java.lang.Integer.parseInt(Integer.java:784)
