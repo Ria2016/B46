@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T07:59:48Z" name="Default suite" finished-at="2022-07-27T08:00:06Z" duration-ms="18368">
+  <suite started-at="2022-07-27T08:03:54Z" name="Suite" finished-at="2022-07-27T08:04:05Z" duration-ms="11475">
     <groups>
     </groups>
-    <test started-at="2022-07-27T07:59:48Z" name="Default test" finished-at="2022-07-27T08:00:06Z" duration-ms="18368">
+    <test started-at="2022-07-27T08:03:54Z" name="QA" finished-at="2022-07-27T08:04:05Z" duration-ms="11475">
       <class name="script.ValidLogin">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:script.ValidLogin@65987993]" started-at="2022-07-27T07:59:47Z" name="createReport" finished-at="2022-07-27T07:59:48Z" duration-ms="493" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:03:53Z" name="createReport" finished-at="2022-07-27T08:03:54Z" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="openApp(java.lang.reflect.Method, java.lang.String)[pri:0, instance:script.ValidLogin@65987993]" started-at="2022-07-27T07:59:48Z" name="openApp" finished-at="2022-07-27T08:00:06Z" duration-ms="18200" status="FAIL">
+        <test-method is-config="true" signature="openApp(java.lang.reflect.Method, java.lang.String)[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:03:54Z" name="openApp" finished-at="2022-07-27T08:04:05Z" duration-ms="11424" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -48,25 +48,20 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@65987993]" started-at="2022-07-27T08:00:06Z" name="testValidLogin" finished-at="2022-07-27T08:00:06Z" duration-ms="0" status="SKIP">
+        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:04:05Z" name="testValidLogin" finished-at="2022-07-27T08:04:05Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[For input string: ""]]>
@@ -91,33 +86,28 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@65987993]" started-at="2022-07-27T08:00:06Z" name="closeApp" finished-at="2022-07-27T08:00:06Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:04:05Z" name="closeApp" finished-at="2022-07-27T08:04:05Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.ValidLogin@65987993]" started-at="2022-07-27T08:00:06Z" name="publishReport" finished-at="2022-07-27T08:00:07Z" duration-ms="843" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.ValidLogin@6af93788]" started-at="2022-07-27T08:04:05Z" name="publishReport" finished-at="2022-07-27T08:04:06Z" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
       </class> <!-- script.ValidLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- QA -->
+  </suite> <!-- Suite -->
 </testng-results>
