@@ -47,6 +47,7 @@ public class BaseTest implements IAutoConst{
 	@BeforeMethod
 	public void openApp(Method testMethod,@Optional("config.properties") String property) {
 		String configPath=ENV_FOLDER+property;
+		System.out.println(configPath);
 		
 		String testName=testMethod.getName();
 		extentTest = EXTENTREPORTS.createTest(testName);
@@ -57,7 +58,7 @@ public class BaseTest implements IAutoConst{
 		
 		String browser = Utility.getProperty(configPath,"BROWSER");
 		extentTest.log(Status.INFO, "Browser is:"+browser);
-		
+		System.out.println("Browser is:"+browser);
 		
 		if(gird.equalsIgnoreCase("YES"))
 		{
